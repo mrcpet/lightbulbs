@@ -1,0 +1,167 @@
+.contact-page {
+  background-image: url(assets/img/mobile-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-page-wrapper {
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-container {
+        border-right: 5px solid black;
+        @include mobile {
+            border: none;
+        }
+    }
+}
+@include desktop {
+    body {
+        background-image: linear-gradient($blue-light, $pink-light);
+        .left-container{
+          width: 49%;
+        }
+    }
+}
+
+.containerText{
+    text-align: center;
+    margin: 1em auto;
+    font-family:$font2;
+    color: $blue-dark;
+}
+
+// -----------CSS for Form---------------
+$elementWidth: 100%; // Adjust this value to your preferred width
+
+$formBackgroundColor: #f7f7f7;
+$formBorderColor: #ccc;
+$formBorderRadius: 20px;
+$inputPadding: 10px;
+$buttonBgColor: $blue-dark;
+$buttonTextColor: #fff;
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: $font3;
+}
+
+#emailForm, #subjectForm, #contactText {
+  width: $elementWidth;
+  padding: $inputPadding;
+  border: 1px solid $formBorderColor;
+  border-radius: $formBorderRadius;
+}
+#contactText::placeholder {
+    text-align: center;
+  }
+#subjectForm{
+    text-align: center;
+}
+
+.contactForm {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $formBackgroundColor;
+  border: 1px solid $formBorderColor;
+  border-radius: $formBorderRadius;
+
+  fieldset {
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    select {
+      background-color: #fff;
+    }
+  }
+}
+
+#submitButton {
+  background-color: $buttonBgColor;
+  color: $buttonTextColor;
+  padding: $inputPadding 20px;
+  border: none;
+  border-radius: $formBorderRadius;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($buttonBgColor, 10%);
+  }
+}
+
+
+
+// --------------CSS for Divider + IMG------------
+.dividerContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+    // border: 1px pink solid;
+
+}
+.divider{
+    @include desktop {
+        border: none;
+    }
+    font-family: $font3;
+    color: $blue-dark;
+    text-align: center;
+    width: 90%;
+    border-bottom: 5px solid $blue-dark
+    
+    
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    }
+
+
+.officeJPG{
+    width: 85%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+// ----------INFO BOX-------------
+.infoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBox{
+font-family: $font3;
+width: 300px;
+height: 200px;
+border: 1px white solid;
+background-color: white;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 2rem;
+a{
+  color: black;
+  &:hover{
+    color: $grayish;
+  }
+}
+
+}
+.adress, .telephone, .email {
+    padding: 0 2px;
+}

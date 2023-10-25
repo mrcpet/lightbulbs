@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400&family=B612:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <title>Lightbulbs</title>
+</head>
+
+<body class="startpage">
+    <header>
+        <a href="index.html"><span><img class="bulb-logo" src="assets/logos-icons/lightbulb-logo.svg"
+                    alt="lightbulb icon"></span></a>
+        <a href="index.html">
+            <h1>Lightbulbs</h1>
+        </a>
+        <nav>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <span><img class="burger-icon icon" src="assets/logos-icons/burger-menu-icon.svg"
+                        alt="lightbulb icon"></span>
+            </a>
+            <!-- navigation for desktop when hamburger menu is not showing -->
+            <ul class="desktop-nav">
+                <li><a href="index.html" class="active-page">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="cases.html">Cases</a>
+            <a href="contact-us.html">Contacts</a>
+        </div>
+    </header>
+    <main>
+        <div class="about-text">We provide tailored web solutions!</div>
+        <div class="main-container">
+            <!-- Catchphrase section -->
+            <h2 class="catchphrase">
+                <span class="catchphrase-row1">
+                    <span>Bridging</span>
+                </span>
+                <span class="catchphrase-row2">
+                    <span>Gaps <span>with</span></span>
+                </span>
+                <span class="catchphrase-row3">
+                    <span>Tech</span>
+                </span>
+            </h2>
+            <!-- Call To Action -->
+            <div class="cta">
+                <a href="services.html">Read about our services</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span><img class="bulb-logo" src="assets/logos-icons/lightbulb-logo.svg" alt="lightbulb icon"></span>
+        <section class="footer-top">
+            <h3>Lightbulbs</h3>
+        </section>
+        <section class="footer-bottom">
+            <div class="contact-options">
+                <!--Contact info and nav links -->
+                <address>
+                    <p>Lampgårdsgatan 12</p>
+                    <p>114 14 Stockholm</p>
+                    <a href="tel:+0703334455">070- 333 44 55</a><br>
+                    <a href="mailto:hello@lightbulbs.com">hello@lightbulbs.com</a>
+                </address>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </section>
+        <!-- Social Icons -->
+        <div class="contact-socials">
+            <span><img class="social-icon" src="assets/logos-icons/facebook-icon.svg" alt="facebook icon"></span>
+            <span><img class="social-icon" src="assets/logos-icons/twitter-icon.svg" alt="twitter icon"></span>
+            <span><img class="social-icon" src="assets/logos-icons/instagram-icon.svg" alt="instagram icon"></span>
+            <span><img class="social-icon" src="assets/logos-icons/linkedin-icon.svg" alt="linkedin icon"></span>
+        </div>
+        <p>Copyright 2023 &copy;</p>
+    </footer>
+    <!-- burger js-->
+    <script src="script.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.cases-page {
+  background-image: linear-gradient($blue-light, $pink-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  main {
+    @include desktop {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+      @include desktop {
+        flex-direction: row;
+      }
+    }
+    article {
+      margin: 0 1rem 3rem 1rem;
+      @include desktop {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+    h2 {
+      font-family: $font3;
+      color: $blue-dark;
+      margin: 3rem 0;
+      font-size: 1.75rem;
+      text-align: center;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 4rem;
+      }
+    }
+    h3 {
+      font-family: $font3;
+      color: $pink-dark;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .review-stars {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .customer-portrait {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      margin: 0.5rem;
+      float: left;
+      @include desktop {
+        width: 8rem;
+      }
+    }
+    p {
+      color: $blue-dark;
+      text-align: left;
+    }
+    .contact-button {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+      @include desktop {
+        display: none;
+      }
+      button {
+        @include button;
+        
+      }
+    }
+    .contact-button-desktop {
+      display: none;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+      button {
+        @include button;
+        width: 10rem;
+      }
+    }
+  }
+}
